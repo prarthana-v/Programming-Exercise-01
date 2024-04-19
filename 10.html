@@ -1,0 +1,33 @@
+<!-- 0. Write a javascript program array  create 2d array and print boundary element.
+let arr = [
+         [1,2,3,4,5],
+         [6,7,8,9,10],
+         [11,12,13,14,15],
+        [16,17,18,19,20]
+]
+
+ans :- [1,2,3,4,5,10,15,20,19,18,17,16,11,6] -->
+<script>
+  let arr = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 10],
+    [11, 12, 13, 14, 15],
+    [16, 17, 18, 19, 20],
+  ];
+
+  let ans = [];
+  let ctn = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (i == 0) {
+      for (let j = 0; j < arr[i].length; j++) {
+        ans[ctn++] = arr[i][j];
+      }
+    } else if (i == 3) {
+      for (let j = arr[i].length - 1; j >= 0; j--) {
+        ans[ctn++] = arr[i][j];
+      }
+    }
+    else if()
+  }
+  console.log(ans);
+</script>

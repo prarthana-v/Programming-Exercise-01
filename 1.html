@@ -1,0 +1,15 @@
+<!-- 1. Write a javascript program two array merge using for loop. -->
+<script>
+  let arr1 = [1, 2, 3, 4, 5];
+  let arr2 = [6, 7, 8, 9, 10];
+  let arr3 = [];
+
+  for (let index = 0; index < arr1.length; index++) {
+    arr3[index] = arr1[index];
+  }
+
+  for (let index = 0; index < arr2.length; index++) {
+    arr3[arr1.length + index] = arr2[index];
+  }
+  console.log(arr3);
+</script>

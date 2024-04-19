@@ -1,0 +1,15 @@
+<script>
+  // Write a javascript program array sorted accending order usig for loop.
+  let arr = [3, 12, 10, 8, 7];
+
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i; j < arr.length; j++) {
+      if (arr[i] > arr[j]) {
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+  console.log(arr);
+</script>

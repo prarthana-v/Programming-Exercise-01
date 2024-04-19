@@ -1,0 +1,25 @@
+<!-- 
+8. Write a javascript program array  create 2d array column wise sum
+let arr = [
+            [7,8,9],
+            [1,2,3],
+            [4,5,6],
+] 
+ans :- [7,1,4] = 12 
+          [8,2,5] = 15
+          [9,3,6] = 18 -->
+<script>
+  let arr = [
+    [7, 8, 9],
+    [1, 2, 3],
+    [4, 5, 6],
+  ];
+
+  for (let i = 0; i < arr[0].length; i++) {
+    let sum = 0;
+    for (let j = 0; j < arr.length; j++) {
+      sum += arr[j][i];
+    }
+    console.log(`sum of col  = ${sum}`);
+  }
+</script>
